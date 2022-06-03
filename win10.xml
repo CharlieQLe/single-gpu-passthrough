@@ -54,13 +54,7 @@ ONLY BASE THE XML CONFIGURATION OFF OF THIS! USE VIRT-MANAGER TO ADD ANY NVME DR
     <timer name="hypervclock" present="yes"/>
     <timer name="tsc" present="yes" mode="native"/>
   </clock>
-  <on_poweroff>destroy</on_poweroff>
-  <on_reboot>restart</on_reboot>
-  <on_crash>destroy</on_crash>
-  <pm>
-    <suspend-to-mem enabled="no"/>
-    <suspend-to-disk enabled="no"/>
-  </pm>
+  ...
   <devices>
     ...
     <memballoon model="none"/>
